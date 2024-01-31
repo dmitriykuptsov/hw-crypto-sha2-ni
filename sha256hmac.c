@@ -91,5 +91,5 @@ static void* my_sha256(const void* data,
   size_t sz;
   sha256_update_shani((const unsigned char*)data, datalen, digest);
   sz = (outlen > SHA256_HASH_SIZE) ? SHA256_HASH_SIZE : outlen;
-  return memcpy(out, digest, outlen);
+  return memcpy(out, digest, sz);
 }
