@@ -7,7 +7,7 @@ CXX_FLAGS=-Wall -Wextra -O3 -pedantic
 PYTHON_INCLUDE=/usr/include/python3.9/
 
 default:
-	$(CXX) $(CXX_STANDARD) $(LINKER) -Wl,-soname,shalib.so -o shalib.so shalib.c $(DFLAGS) $(CXX_FLAGS) -fPIC -I $(PYTHON_INCLUDE)
+	$(CXX) $(CXX_STANDARD) $(LINKER) -Wl,-soname,shalib.so -o shalib.so shani.c $(DFLAGS) $(CXX_FLAGS) -fPIC -I $(PYTHON_INCLUDE)
 
 clean:
 	@rm shalib.so
